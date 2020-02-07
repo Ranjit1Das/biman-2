@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
 
     style="@style/TextAppearance.AppCompat.Headline"
     android:layout_width="match_parent"
@@ -36,7 +44,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:text="@string/passenger_name"
+        tools:text="@string/passenger_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorDark"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +88,7 @@
         android:layout_width="70dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
-        android:text="@string/origin_code"
+        tools:text="@string/origin_code"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toEndOf="@+id/leftRectangle"
@@ -94,7 +102,7 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
 
-        android:text="@string/destination_code"
+        tools:text="@string/destination_code"
         app:layout_constraintStart_toStartOf="@+id/rightRectangle"
         app:layout_constraintTop_toTopOf="@+id/rightRectangle" />
 
@@ -106,14 +114,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPassengerName"
-        app:srcCompat="@drawable/ic_5a4eb7321fe165d91f0bddb5182be451" />
+        app:srcCompat="@drawable/art_plane" />
 
     <TextView
         android:id="@+id/textViewFlightCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="@string/textViewFlightCode"
+        tools:text="@string/textViewFlightCode"
         app:layout_constraintEnd_toStartOf="@+id/rightRectangle"
         app:layout_constraintStart_toEndOf="@+id/leftRectangle"
         app:layout_constraintTop_toBottomOf="@+id/imagePlane"
@@ -152,7 +160,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:text="@string/boarding_time"
+        tools:text="@string/boarding_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorDark"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -166,7 +174,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
-        android:text="@string/count_down"
+        tools:text="@string/count_down"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorRed"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -204,7 +212,7 @@
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:text="@string/departure_time"
+        tools:text="@string/departure_time"
 
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorDark"
@@ -217,7 +225,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="@string/arrival_time"
+        tools:text="@string/arrival_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorDark"
         app:layout_constraintEnd_toEndOf="parent"
@@ -274,6 +282,7 @@
         android:id="@+id/imageView3"
         android:layout_width="379dp"
         android:layout_height="77dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
@@ -287,7 +296,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:text="@string/terminal"
+        tools:text="@string/terminal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorWhite"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
@@ -295,29 +304,32 @@
 
     <TextView
         android:id="@+id/textViewGate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="22dp"
+        android:layout_height="46dp"
         android:layout_marginStart="144dp"
         android:layout_marginLeft="144dp"
         android:layout_marginTop="20dp"
-        android:text="@string/gate"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSeat"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textViewTerminal"
-        app:layout_constraintTop_toBottomOf="@+id/textViewGateLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewGateLabel"
+        tools:text="@string/gate" />
 
     <TextView
         android:id="@+id/textViewSeat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginLeft="124dp"
         android:layout_marginTop="20dp"
-        android:text="@string/seat"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
         android:textColor="@color/colorWhite"
-        app:layout_constraintStart_toEndOf="@+id/textViewGate"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTextViewSeatLabel" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextViewSeatLabel"
+        tools:text="@string/seat" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -333,3 +345,5 @@
         app:srcCompat="@drawable/barcode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

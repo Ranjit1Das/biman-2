@@ -19,4 +19,6 @@
     <string name="terminal">2</string>
     <string name="gate">5</string>
     <string name="seat">3C</string>
+    <string name="countDownFormat" >%1$02d:%2$02d</string>
+    <string name="timeFormat">hh:mm a</string>
 </resources>
