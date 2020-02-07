@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">biman</string>
+    <string name="passenger_label">Passenger</string>
+    <string name="passenger_name">Mr.Tamato</string>
+    <string name="origin_code">DHA</string>
+    <string name="destination_code">CTG</string>
+    <string name="textViewFlightCode">NOVO777</string>
+    <string name="boarding_time_label">BOARDING TIME</string>
+    <string name="boarding_in">Boarding In</string>
+    <string name="boarding_time">02:10 P:M</string>
+    <string name="count_down">00:15</string>
+    <string name="departure_time_label">Departure </string>
+    <string name="arrival_time_label">Arrival</string>
+    <string name="departure_time">02:40 PM</string>
+    <string name="arrival_time">4:10 P:M</string>
+    <string name="terminal_label">Terminal</string>
+    <string name="gate_label">Gate</string>
+    <string name="seat_label">Seat</string>
+    <string name="terminal">2</string>
+    <string name="gate">5</string>
+    <string name="seat">3C</string>
 </resources>
