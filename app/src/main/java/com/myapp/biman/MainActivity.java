@@ -14,14 +14,14 @@ import java.util.concurrent.TimeUnit;
 
 import utilities.FakeDataUtils;
 
-
+import static com.myapp.biman.R.layout.activity_main;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding mBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(activity_main);
 
         mBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
         BoardingPassInfo fakeBoardingInfo = FakeDataUtils.generateFakeBoardingPassInfo();
